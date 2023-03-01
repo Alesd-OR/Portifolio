@@ -23,7 +23,6 @@ h1 {
      font-weight: 900;
      color: #fff;
      font-family: 'Oswald';
-
 }
 
 span {
@@ -31,7 +30,6 @@ span {
      color: #fff;
      font-family: 'Raleway';
      height: 55vh;
-     
 
 }
 
@@ -41,6 +39,8 @@ a {
      text-decoration: none;
      background: linear-gradient(90deg, #71bd6e, #c22424 );
      padding: 0.65rem 1rem;
+     font-family: 'Raleway';
+     text-transform: uppercase;
      border-radius: 7px;
 
 }
