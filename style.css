@@ -34,7 +34,7 @@ h2 {
    
     font-size: 42px;
     color: #fff;
-    font-family: 'Poppins';
+    font-family: 'Raleway';
 }
 
 
@@ -42,14 +42,15 @@ a {
     margin: 10px;
     padding: 10px;
     color:#fff;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: 'Poppins';
     text-transform: uppercase;
     /* para deixa tudo em letra maiscula! */
     text-decoration: none;
-    background: linear-gradient(90deg, rgb(36, 56, 78), rgb(56, 124, 151) );
+    background: linear-gradient(90deg, rgb(25, 38, 53), rgb(48, 102, 121) );
     padding: 1rem 2rem;
     border-radius: 7px;
+
 }
 
 /* como deixa redondo*/
@@ -88,4 +89,7 @@ h3 {
 
 p {
     color: #fff;
+    font-family: 'Jost';
+    font-size: 23px;
+    line-height: 2rem;
 }
