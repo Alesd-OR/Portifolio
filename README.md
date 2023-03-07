@@ -1,2 +1,1 @@
-# ProjetoSite
-Uso em sala de aula
+# Projeto Developer
