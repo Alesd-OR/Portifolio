@@ -13,7 +13,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-image: url(./inicio.jpg);
+    background-image: url(./home-dados\ \(2\).jpg);
     background-size: cover;
     height: 100vh;
     padding-top: 12.5rem;
@@ -41,13 +41,13 @@ h2 {
 a {
     margin: 10px;
     padding: 10px;
-    color: #000;
+    color:#fff;
     font-size: 1.5rem;
     font-family: 'Poppins';
     text-transform: uppercase;
     /* para deixa tudo em letra maiscula! */
     text-decoration: none;
-    background: linear-gradient(90deg, #fff, #fff );
+    background: linear-gradient(90deg, rgb(36, 56, 78), rgb(56, 124, 151) );
     padding: 1rem 2rem;
     border-radius: 7px;
 }
@@ -66,8 +66,7 @@ section{
     display: flex;
     gap: 2rem;
     padding: 7rem;
-    background-image: url(./fundo.jpg);
-
+    background-image: url(./home-me\ \(2\).jpg);
     
 }
 
@@ -77,14 +76,16 @@ div {
     flex-direction: column;
     justify-content: space-between;
     align-items: center; 
-   
-     
 
 }
 
 h3 {
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bold;
     color: #ffffff;
     font-family: 'Montserrat';
+}
+
+p {
+    color: #fff;
 }
