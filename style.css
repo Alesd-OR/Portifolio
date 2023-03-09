@@ -8,66 +8,133 @@
 
 }
 
+:root {
+    --text-primary: #fff;
+    --text-secundary: #000;
+    --font-heading: 'Poppins';
+    --font-default: 'Montserrat';
+    font-size: 62.5%; /*10 dividido por 16*/
+}
+
+body{
+
+    font-family: var(--font-default);
+
+}
+
 header {
 
+    color: var(--text-primary);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-image: url(./home-dados\ \(2\).jpg);
-    background-size: cover;
     height: 100vh;
     padding-top: 12.5rem;
     padding-left: 6.75rem;
+    overflow: hidden;
+    position: relative;
+    gap: 0.75rem;
+    
+}
+
+
+header::before{
+    
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url(./dados.jpg);
+    background-size: cover;
+    animation: zoom 5s;
 
 }
 
-h1 {
+@keyframes ilusion{
+
+    0%{
+        transform:scale(1.5);
+    }
+    100%{
+        transform:scale(1);
+    }
+
+}
+
+
+h1, h2, h3, h4 {
     
-    font-size: 50px;
     font-weight: 900;
     color: #ffffff;
-    font-family: 'Poppins';
+    font-family: var(--font-heading);
+    
+}
+
+h1{
+    font-size: 5rem;
+    padding-top: 3.12rem;
 
 }
 
-h2 {
+h2{
+    font-size: 3rem;
+
+}
+
+span {
    
     font-size: 42px;
     color: #fff;
     font-family: 'Raleway';
 }
 
+.botao {
 
-a {
     margin: 10px;
-    padding: 10px;
+    padding: 10px; 
     color:#fff;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-family: 'Poppins';
     text-transform: uppercase;
     /* para deixa tudo em letra maiscula! */
     text-decoration: none;
     background: linear-gradient(90deg, rgb(25, 38, 53), rgb(48, 102, 121) );
-    padding: 1rem 2rem;
+    padding: 1.75rem 1.8rem;
     border-radius: 7px;
 
+
+}
+
+.botao:hover{
+
+    color: #000;
+    opacity: .50; 
+    
 }
 
 /* como deixa redondo*/
 
-img {
+#myself {
+    
     border-radius: 50%;
     /* se a imagem for muito grande usar */
     width: 300px;
     height: 300px;
+
+
 }
 
 /* flex box*/
-section{
+section {
+    
     display: flex;
     gap: 2rem;
     padding: 7rem;
-    background-image: url(./home-me\ \(2\).jpg);
+    background-image: url(./computers.jpg);
     
 }
 
@@ -90,6 +157,6 @@ h3 {
 p {
     color: #fff;
     font-family: 'Jost';
-    font-size: 23px;
+    font-size: 2rem;
     line-height: 2rem;
 }
