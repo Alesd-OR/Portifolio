@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@keyframes fadeIn {
+     from {
+          opacity: 0;
+     }
+
+     to {
+          opacity: 1;
+     }
+}
+
+
+body {
+
+     background-color: black;
+}
+
+.cabecalho__paginaInicial {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     background-image: url(./assets/images/geek.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     padding-bottom: 40vh;
+}
+
+.titulo__site {
+     /* CULTURA GEEK */
+     width: 677px;
+     height: 141px;
+     margin-top: 10%;
+     margin-left: 5%;
+     font-family: 'Passion One';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 128px;
+     line-height: 141px;
+     display: flex;
+     align-items: center;
+     animation: fadeIn 2s;
+     color: #FFFFFF;
+
+     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+     font-size: 50px;
+     font-weight: 900;
+     color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4 {
+     font-weight: 900;
+}
+
+.chamada {
+     /* “Aqui a resposta nem sempre é 42” */
+     width: 800px;
+     height: 47px;
+     margin-top: 1%;
+     margin-left: 5%;
+     font-family: 'Roboto Mono';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 36px;
+     line-height: 47px;
+     display: flex;
+     align-items: center;
+     text-align: center;
+     animation: fadeIn 5s;
+     color: #FFFFFF;
+
+     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.btn__prosseguir {
+     /* btn__saibaMais */
+     margin-top: 2%;
+     margin-left: 5%;
+
+     border-radius: 6px;
+
+     background: linear-gradient(90deg, #AA0000 0%, #E44D2E 100%);
+     border-radius: 6px;
+
+     font-family: 'Passion One';
+     font-weight: 400;
+     font-size: 36px;
+     line-height: 40px;
+     text-align: center;
+
+     color: #FFFFFF;
+     text-decoration: none;
+     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+     width: 200px;
+     padding: 0.65rem 1rem;
+
+     animation: fadeIn 5s;
+}
+
+.espaco {
+     display: block;
+     height: 20px;
+}
+
+.btn__prosseguir:hover {
+     width: 220px;
+     padding: 1rem 1.5rem;
+     transition-timing-function: ease-in;
+     transition-duration: 200ms;
+     transition-timing-function: ease-out;
+}
+
+.image__fundo {
+     object-fit: cover;
+     width: 100%;
+     height: 100%;
+}
+
+.segunda__chamada {
+     margin-top: 18%;
+     font-size: 80px;
+     position: absolute;
+     color: #FFFFFF;
+     font-family: 'Passion One';
+     font-weight: 400;
+     text-align: center;
+     align-self: center;
+}
+
+.segunda__chamada:hover {
+     font-size: 550%;
+     transition: font-size 200ms ease-in-out
+}
+span {
+     font-size: 4rem;
+ }
+ 
+ p{
+     font-size: 2rem;
+ }
+ section {
+     display: flex;
+     gap: 2rem;
+ }
+ 
+ div {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: flex-start;
+ }
+ 
+ #secao-projetos{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    background-color: #212121;
+ }
+ 
+ #secao-projetos ul{
+     display: flex;
+     justify-content: space-between;
+     gap: 2rem;
+     color: #FFFFFF;
+ }
+ 
+ #secao-projetos li{
+     list-style: none;
+ }
+ 
+ .card {
+   width: 25rem;
+   height: 30rem;
+   position: relative;
+   cursor: pointer;
+ }
+ 
+ .card-img-wrapper {
+     width: 100%;
+     height: 100%;
+     background-color: #262626;
+     border-radius: 1rem;
+ }
+   
+ .card-img-wrapper img {
+     object-fit: cover;
+     width: 100%;
+     height: 100%;
+     border-radius: 1rem;
+     opacity: 0.8;
+     transition: opacity 0.3s;
+ }
+   
+ .card:hover .card-img-wrapper img {
+     opacity: 0.5;
+ }
+   
+ .card-text {
+     position: absolute;
+     bottom: -2rem;
+     opacity: 0;
+     padding: 2rem;
+     text-shadow: 0.3rem 0.2rem 0.3rem rgba(0, 0, 0, 0.6);
+     transition: all 0.3s;
+ }
+ 
+ .card:hover .card-text {
+     opacity: 1;
+     bottom: 0;
+ }
+ 
+ #secao-projetos h3{
+     font-family: 'Roboto Mono';
+     font-weight: 700;
+     font-size: 2rem;
+     line-height: 3.3rem;
+     color: #f1f1f1;
+ }
+ 
+ #secao-projetos p{
+     font-size: 1.5rem;
+ } 
+
+ #Secaodeorcamentos{
+     height: 100vh;
+     justify-content: center;
+     align-items: center;
+     background: url(); /*colocar alguma imagem referente ao projeto*/
+     background-size: cover; /*item para nao clonar a imagem e cobrir a tela inteira*/
+}
+
+ #Secaodeorcamentos form{
+     display: grid;
+     grid-template-columns: 1fr auto;
+     background-color: #FFF9; 
+     backdrop-filter: blur(2px);
+     border: 10px;
+     padding: 3rem;
+
+ }
+
+ #Secaodeorcamentos form h3{
+     background-color: #AA0000;
+     color: var(--text-primary);
+     position: absolute;
+     top: -10%;
+     padding: 1rem 3rem;
+     border-radius: 10px; /*arredondar bordas*/
+ }
+
+ #Secaodeorcamentos form output{
+     grid-column: 2;
+ }
