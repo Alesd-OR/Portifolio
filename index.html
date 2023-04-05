@@ -9,10 +9,15 @@
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />"
+    <script src="./js/loader.js"></script>
 
 </head>
 
 <body>
+    <div class="loader">
+        <div class="spin"></div>
+    </div>
+    <main class="hiden">
 
     <nav>
         <div id="hamburguer">
@@ -43,73 +48,74 @@
         <span class="chamada">“Aqui, a resposta nem sempre é 42!”</span>
         <a class="btn__prosseguir" href="#segunda__chamada">SAIBA MAIS</a>
     </header>
-    
-    <!-- <section id="#segunda__chamada" class="segunda__chamada">Um novo jeito de descobrir mais sobre o mundo Geek -->
-        <!-- <div class="image__fundo"><img src="./assets/images/redsun.png" width="1920px" height="1080px"></div> -->
+    <section id="secao-chamada">
+        <h2 class="segunda__chamada">Um novo jeito de descobrir mais sobre o mundo Geek</h2>
     </section>
-    <section id = "secao-chamada"><div class="image__fundo"><img src="./assets/images/redsun.png" class="image__fundo"><p class="segunda__chamada">Um novo jeito de descobrir mais sobre o mundo Geek</p></div></section>
     <section id="secao-projetos">
         <ul>
             <li>
                 <div class="card">
                     <div class="card-img-wrapper">
-                      <img src="./assets/images/fundos-de-longo-prazo.webp" alt="imagem do projeto " />
+                        <img src="./assets/images/anime_generic.jpg" alt="imagem do projeto " />
                     </div>
                     <div class="card-text">
-                        <h2>Lorem</h2>
-                        <h3>Java</h3>
+                        <h2></h2>
+                        <h3>Animes</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-                        <a href="#" class="btn__prosseguir">saiba mais</a>
+                        <a href="#" class="btn__prosseguir">SAIBA MAIS</a>
                     </div>
                 </div>
             </li>
             <li>
                 <div class="card">
                     <div class="card-img-wrapper">
-                      <img src="./assets/images/fundos-de-longo-prazo.webp" alt="imagem do projeto " />
+                        <img src="./assets/images/marvel_comics.jpg" alt="imagem do projeto " />
                     </div>
                     <div class="card-text">
-                        <h2>Ipsum</h2>
-                        <h3>Java</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, voluptate dolorum provident error ut libero?</p>
-                        <a href="#" class="btn__prosseguir"> saiba mais</a>
+                        <h2></h2>
+                        <h3>Marvel</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, voluptate dolorum
+                            provident error ut libero?</p>
+                        <a href="#" class="btn__prosseguir"> SAIBA MAIS</a>
                     </div>
             </li>
             <li>
                 <div class="card">
                     <div class="card-img-wrapper">
-                      <img src="./assets/images/fundos-de-longo-prazo.webp" alt="imagem do projeto " />
+                        <img src="./assets/images/gameboy.jpg" alt="imagem do projeto " />
                     </div>
                     <div class="card-text">
-                        <h2>dolorum</h2>
-                        <h3>Java</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores maxime molestias quis! Quis, quos aspernatur!</p>
-                        <a href="#" class="btn__prosseguir"> saiba mais</a>
+                        <h2></h2>
+                        <h3>Games</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores maxime molestias quis! Quis,
+                            quos aspernatur!</p>
+                        <a href="#" class="btn__prosseguir"> SAIBA MAIS</a>
                     </div>
             </li>
         </ul>
     </section>
-        <section id="Secaodeorcamentos">
-          <form action="#">
-               <h3>Orçamentos</h3>
-               <label for = "qtde"> N. de páginas</label>
-               <input type = "number" id = "qtde">
-               <label for = "js">Precisa de JS?</label>
-               <input type = "checkbox" id = "js">
-               <label for = "layout">Precisa de layout?</label>
-               <div>
-                   <input type = "radio" id = "layout_sim" name = "layout">
-                   <label for = "layout_sim">sim, preciso</label>
-                   <input type = "radio" id = "layout_não" name = "layout">
-                   <label for = "layout_não">não, já tenho</label>
-               </div>
-               <label for="prazo" >Prazo</label>
-               <input type="range" min= '1' max= '10' id = "prazo">
-               <output>R$ 0,00</output>
-               
+    <section id="Secaodeorcamentos">
+        <form action="#">
+            <h3>Orçamentos</h3>
+            <label for="qtde"> N. de páginas</label>
+            <input type="number" id="qtde">
+            <label for="js">Precisa de JS?</label>
+            <input type="checkbox" id="js">
+            <label for="layout">Precisa de layout?</label>
+            <div>
+                <input type="radio" id="layout_sim" name="layout">
+                <label for="layout_sim">Sim</label>
+                <input type="radio" id="layout_não" name="layout">
+                <label for="layout_não">Não</label>
+            </div>
+            <label for="prazo">Prazo</label>
+            <input type="range" min='1' max='10' id="prazo">
+            <output>R$ 0,00</output>
+
 
             </form>
-    </section>
+        </section>
+    </main>
 </body>
 
 <script src="./js/script.js"></script>
