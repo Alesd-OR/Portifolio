@@ -309,3 +309,28 @@ span {
  #Secaodeorcamentos form output{
      grid-column: 2;
  }
+
+ /*secao de desenvolvimento para mobile*/
+
+ @media (max-width <= 890px) {
+    #secao-projetos ul{
+            flex-direction: column;
+    }
+    #secao-orcamento form{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+ }
+
+ @media (width < 768px){
+    .only-Large {
+        display: none;
+    }
+    #nome {
+        display: none;
+    }
+
+
+ }
