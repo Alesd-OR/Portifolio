@@ -16,6 +16,55 @@ body {
      background-color: black;
 }
 
+#hamburguer{
+    position: fixed;
+    right: 2rem;
+    top: 2rem;
+    height: 3rem;
+    width: 3rem;
+
+}
+
+#hamburguer .linha{
+height: .5rem;
+width: 100%;
+background-color: #fff;
+box-shadow: 0 .2rem .2rem #000;
+}
+
+.menu-show{
+    right: 0;
+}
+
+nav {
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    display: flex;
+    background-color: #fff;
+    height: 100vh;
+    width: 20rem;
+    z-index: 10;
+    right: -20rem;
+    transition: right 0.5s;
+}
+
+/* Para tirar o sublinhado o a e tirar a bolinha na lista */
+nav a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color:var(--text-secundary);
+}
+
+
+nav li{
+    list-style: none;
+}
+
+nav a:hover{
+    color: #ff0000;
+}
+
 .cabecalho__paginaInicial {
      display: flex;
      flex-direction: column;
