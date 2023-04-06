@@ -11,6 +11,45 @@
     }
 }
 
+@media (max-width: 890px) {
+
+    #secao-projetos ul{
+        flex-direction: column;
+    }
+
+    #Secaodeorcamentos form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #secao-chamada {
+        display: flex;
+        flex-direction: column;
+        background-image: none;
+    }
+
+    .cabecalho__paginaInicial {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
+
+@media (width: 769px) {
+
+    .largo {
+        display: none;
+    }
+    
+    #secao-chamada {
+        display: flex;
+        flex-direction: column;
+        background-image: none;
+    }
+
+}
+
 * {
     font-family: 'Roboto Mono';
 }
@@ -21,14 +60,14 @@ body {
 }
 
 /*aula 05/04*/
-.loader{
+.loader {
     display: flex;
     align-items: center;
     height: 100vh;
-    
+
 }
 
-.spin{
+.spin {
     height: 120px;
     width: 120px;
     border-radius: 50%;
@@ -37,37 +76,42 @@ body {
     animation: spin 2s linear infinite;
 }
 
-.hiden{
+.hiden {
     display: none;
-    
+
 }
 
 @keyframes spin {
     0% {
         transform: rotate(0);
     }
-    100%{
+
+    100% {
         transform: rotate(360deg);
     }
 }
 
-#hamburguer{
+header h1 {
+    font-size: clamp (3rem, 5vh, 5rem);
+}
+
+#hamburguer {
     position: fixed;
     right: 2rem;
     top: 2rem;
-    height: 3rem;
-    width: 3rem;
+    height: 2rem;
+    width: 2rem;
 
 }
 
-#hamburguer .linha{
-height: .5rem;
-width: 100%;
-background-color: #fff;
-box-shadow: 0 .2rem .2rem #000;
+#hamburguer .linha {
+    height: .5rem;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 .2rem .2rem #000;
 }
 
-.menu-show{
+.menu-show {
     right: 0;
 }
 
@@ -77,26 +121,26 @@ nav {
     position: fixed;
     display: flex;
     background-color: #fff;
-    height: 100vh;
-    width: 20rem;
-    z-index: 10;
+    height: 50vh;
+    width: 15rem;
+    z-index: 1;
     right: -20rem;
     transition: right 0.5s;
 }
 
 /* Para tirar o sublinhado o a e tirar a bolinha na lista */
-nav a{
+nav a {
     text-decoration: none;
     font-size: 1.6rem;
-    color:var(--text-secundary);
+    color: var(--text-secundary);
 }
 
 
-nav li{
+nav li {
     list-style: none;
 }
 
-nav a:hover{
+nav a:hover {
     color: #ff0000;
 }
 
@@ -114,14 +158,14 @@ nav a:hover{
 .titulo__site {
     /* CULTURA GEEK */
     width: 677px;
-    height: 141px;
+    height: 12vh;
     margin-top: 10%;
     margin-left: 5%;
     font-family: 'Passion One';
     font-style: normal;
     font-weight: 400;
-    font-size: 128px;
-    line-height: 141px;
+    font-size: 14vh;
+    line-height: 20vh;
     display: flex;
     align-items: center;
     animation: fadeIn 2s;
@@ -131,7 +175,7 @@ nav a:hover{
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 10vh;
     font-weight: 900;
     color: #fff;
 }
@@ -145,14 +189,14 @@ h4 {
 
 .chamada {
     /* “Aqui a resposta nem sempre é 42” */
-    width: 800px;
+    width: 100vh;
     height: 47px;
     margin-top: 1%;
     margin-left: 5%;
     font-family: 'Roboto Mono';
     font-style: normal;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 100%;
     line-height: 47px;
     display: flex;
     align-items: center;
@@ -190,6 +234,7 @@ h4 {
 
     transition: all 1s;
 }
+
 .btn__prosseguir:hover {
     width: 220px;
     padding: 1rem 1.5rem;
@@ -202,7 +247,8 @@ h4 {
     padding: 45vh;
     margin-bottom: 2px;
     background-image: url('./assets/images/cyberpunk.jpg');
-    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
     transition: opacity 1s;
 }
 
