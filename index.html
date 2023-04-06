@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,21 +9,120 @@
     <title>World Geek</title>
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />"
+    <script src="./js/loader.js"></script>
 
 </head>
 
+
 <body>
-    <header class="cabecalho__paginaInicial">
-        <h1 class="titulo__site">Cultura Geek</h1>
-        <span class="chamada">“Aqui, a resposta nem sempre é 42!”</span>
-        <a class="btn__prosseguir" href="#segunda__chamada">SAIBA MAIS</a>
-    </header>
-    <span class="espaco"></span>
-    <main class="segunda__parte">
-        <div class="image__fundo"><img src="./assets/images/redsun.png" width="1920px" height="1080px"></div>
-        <section id="#segunda__chamada" class="segunda__chamada">Um novo jeito de descobrir mais sobre o mundo Geek</section>
-        
+    <div class="loader">
+        <div class="spin"></div>
+    </div>
+    <main class="hiden">
+
+        <nav>
+            <div id="hamburguer">
+                <div class="linha" id="linha1"></div>
+                <div class="linha" id="linha2"></div>
+                <div class="linha" id="linha3"></div>
+            </div>
+            <ul>
+                <li><a href="#home">
+                        <i class="fa-solid fa-house"></i>
+                        Home</a></li>
+                <li><a href="#secao-apresentacao">
+                        <i class="fa-regular fa-user"></i>
+                        Apresentação</a></li>
+                <li><a href="#secao-decards">
+                        <i class="fa-solid fa-code-merge"></i>
+                        Projetos</a></li>
+                <li><a href="#secao-orcamento">
+                        <i class="fa-solid fa-money-check-dollar"></i>
+                        Orçamentos
+                    </a></li>
+            </ul>
+        </nav>
+
+        <header class="cabecalho__paginaInicial">
+            <h1 class="titulo__site">Cultura Geek</h1>
+            <span class="chamada">“Aqui, a resposta nem sempre é 42!”</span>
+            <a class="btn__prosseguir" href="#segunda__chamada">SAIBA MAIS</a>
+        </header>
+        <section id="secao-chamada">
+            <h2 class="segunda__chamada">Um novo jeito de descobrir mais sobre o mundo Geek</h2>
+        </section>
+        <section id="secao-projetos">
+            <ul>
+                <li>
+                    <div class="card">
+                        <div class="card-img-wrapper">
+                            <img src="./assets/images/anime_generic.jpg" alt="imagem do projeto " />
+                        </div>
+                        <div class="card-text">
+                            <h2></h2>
+                            <h3>Animes</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <a href="#" class="btn__prosseguir">SAIBA MAIS</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <div class="card-img-wrapper">
+                            <img src="./assets/images/marvel_comics.jpg" alt="imagem do projeto " />
+                        </div>
+                        <div class="card-text">
+                            <h2></h2>
+                            <h3>Marvel</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, voluptate dolorum
+                                provident error ut libero?</p>
+                            <a href="#" class="btn__prosseguir"> SAIBA MAIS</a>
+                        </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <div class="card-img-wrapper">
+                            <img src="./assets/images/gameboy.jpg" alt="imagem do projeto " />
+                        </div>
+                        <div class="card-text">
+                            <h2></h2>
+                            <h3>Games</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores maxime molestias quis!
+                                Quis,
+                                quos aspernatur!</p>
+                            <a href="#" class="btn__prosseguir"> SAIBA MAIS</a>
+                        </div>
+                </li>
+            </ul>
+        </section>
+        <section id="Secaodeorcamentos">
+            <form action="#">
+                <h3>Anuncie aqui</h3>
+                <label for="qtde"> Nº de anuncios</label>
+                <input type="number" id="qtde">
+                <label for="js">Já tem banner?</label>
+                <input type="checkbox" id="js">
+                <label for="layout">Video curto?</label>
+                <div>
+                    <input type="radio" id="layout_sim" name="layout">
+                    <label for="layout_sim">Sim</label>
+                    <input type="radio" id="layout_não" name="layout">
+                    <label for="layout_não">Não</label>
+                </div>
+                <label for="prazo">Tempo de exibição</label>
+                <input type="range" min='1' max='10' id="prazo">
+                <output>R$ 0,00</output>
+
+
+            </form>
+        </section>
     </main>
 </body>
+
+<script src="./js/script.js"></script>
+<script src="./js/menu.js"></script>
 
 </html>

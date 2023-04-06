@@ -1,127 +1,411 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 890px) {
+
+    #secao-projetos ul{
+        flex-direction: column;
+    }
+
+    #Secaodeorcamentos form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #secao-chamada {
+        display: flex;
+        flex-direction: column;
+        background-image: none;
+    }
+
+    .cabecalho__paginaInicial {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
+
+@media (width: 769px) {
+
+    .largo {
+        display: none;
+    }
+    
+    #secao-chamada {
+        display: flex;
+        flex-direction: column;
+        background-image: none;
+    }
+
+}
+
+* {
+    font-family: 'Roboto Mono';
+}
 
 body {
-     height: 1080px;
-     width: 1920px;
-     background-color: black;
+
+    background-color: black;
+}
+
+/*aula 05/04*/
+.loader {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.spin {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 10px solid #E44D2E;
+    border-top: 10px solid #AA0000;
+    animation: spin 2s linear infinite;
+}
+
+.hiden {
+    display: none;
+
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+header h1 {
+    font-size: clamp (3rem, 5vh, 5rem);
+}
+
+#hamburguer {
+    position: fixed;
+    right: 2rem;
+    top: 2rem;
+    height: 2rem;
+    width: 2rem;
+
+}
+
+#hamburguer .linha {
+    height: .5rem;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 .2rem .2rem #000;
+}
+
+.menu-show {
+    right: 0;
+}
+
+nav {
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    display: flex;
+    background-color: #fff;
+    height: 50vh;
+    width: 15rem;
+    z-index: 1;
+    right: -20rem;
+    transition: right 0.5s;
+}
+
+/* Para tirar o sublinhado o a e tirar a bolinha na lista */
+nav a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: var(--text-secundary);
+}
+
+
+nav li {
+    list-style: none;
+}
+
+nav a:hover {
+    color: #ff0000;
 }
 
 .cabecalho__paginaInicial {
-     display: flex;
-     flex-direction: column;
-     align-items: flex-start;
-     background-image: url(./assets/images/geek.jpg);
-     background-size: cover;
-     background-repeat: no-repeat;
-     padding-bottom: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-image: url(./assets/images/geek.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 40vh;
+    margin-bottom: 5px;
 }
 
 .titulo__site {
-     /* CULTURA GEEK */
-     width: 677px;
-     height: 141px;
-     margin-top: 10%;
-     margin-left: 5%;
-     font-family: 'Passion One';
-     font-style: normal;
-     font-weight: 400;
-     font-size: 128px;
-     line-height: 141px;
-     display: flex;
-     align-items: center;
-     animation: fadeIn 2s;
-     color: #FFFFFF;
+    /* CULTURA GEEK */
+    width: 677px;
+    height: 12vh;
+    margin-top: 10%;
+    margin-left: 5%;
+    font-family: 'Passion One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14vh;
+    line-height: 20vh;
+    display: flex;
+    align-items: center;
+    animation: fadeIn 2s;
+    color: #FFFFFF;
 
-     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 h1 {
-     font-size: 50px;
-     font-weight: 900;
-     color: #fff;
+    font-size: 10vh;
+    font-weight: 900;
+    color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 900;
 }
 
 .chamada {
-     /* “Aqui a resposta nem sempre é 42” */
-     width: 800px;
-     height: 47px;
-     margin-top: 1%;
-     margin-left: 5%;
-     font-family: 'Roboto Mono';
-     font-style: normal;
-     font-weight: 400;
-     font-size: 36px;
-     line-height: 47px;
-     display: flex;
-     align-items: center;
-     text-align: center;
-     animation: fadeIn 5s;
-     color: #FFFFFF;
+    /* “Aqui a resposta nem sempre é 42” */
+    width: 100vh;
+    height: 47px;
+    margin-top: 1%;
+    margin-left: 5%;
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100%;
+    line-height: 47px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    animation: fadeIn 5s;
+    color: #FFFFFF;
 
-     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 
 .btn__prosseguir {
-     /* btn__saibaMais */
-     margin-top: 2%;
-     margin-left: 5%;
+    /* btn__saibaMais */
+    margin-top: 2%;
+    margin-left: 5%;
 
-     border-radius: 6px;
+    border-radius: 6px;
 
-     background: linear-gradient(90deg, #AA0000 0%, #E44D2E 100%);
-     border-radius: 6px;
+    background: linear-gradient(90deg, #AA0000 0%, #E44D2E 100%);
+    border-radius: 6px;
 
-     font-family: 'Passion One';
-     font-weight: 400;
-     font-size: 36px;
-     line-height: 40px;
-     text-align: center;
+    font-family: 'Passion One';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
 
-     color: #FFFFFF;
-     text-decoration: none;
-     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    text-decoration: none;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 
-     width: 200px;
-     padding: 0.65rem 1rem;
+    width: 200px;
+    padding: 0.65rem 1rem;
 
-     animation: fadeIn 5s;
+    transition: all 1s;
 }
-.espaco {
-     display: block;
-     height: 20px;
-}
+
 .btn__prosseguir:hover {
-     width: 220px;
-     padding: 1rem 1.5rem;
-     transition-timing-function: ease-in;
-     transition-duration: 200ms;
-     transition-timing-function: ease-out;
+    width: 220px;
+    padding: 1rem 1.5rem;
+    transition: all 1s;
 }
 
-.segunda__parte {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     background-size: cover;
+#secao-chamada {
+    display: flex;
+    align-items: center;
+    padding: 45vh;
+    margin-bottom: 2px;
+    background-image: url('./assets/images/cyberpunk.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: opacity 1s;
 }
+
+
 
 .segunda__chamada {
-     margin-top: 18%;
-     font-size: 80px;
-     position: absolute;
-     color: #FFFFFF;
-     font-family: 'Passion One';
-     font-weight: 400;
-     text-align: center; 
-     align-self: center;
+    opacity: 0;
+    font-size: 80px;
+    color: #FFFFFF;
+    font-family: 'Passion One';
+    font-weight: 400;
+    text-align: center;
+    text-shadow: 5px 5px 5px #262626;
+    align-self: center;
+    transition: opacity 1s;
 }
 
-.segunda__chamada:hover {
-     font-size: 550%;
-     transition: font-size 200ms ease-in-out
+#secao-chamada:hover .segunda__chamada {
+    opacity: 1;
+    transition: opacity 1s;
 }
+
+.segunda__chamada span {
+    font-size: 4rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+section {
+    display: flex;
+    gap: 2rem;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#secao-projetos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://blog.br.playstation.com/tachyon/sites/4/2022/06/c50ed40ccbee94460e55dee40a077efc09474a20.jpg');
+    background-size: cover;
+    padding: 35vh;
+    margin-bottom: 5px;
+}
+
+#secao-projetos ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    color: #FFFFFF;
+}
+
+#secao-projetos li {
+    list-style: none;
+}
+
+.card {
+    width: 25rem;
+    height: 30rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.card-img-wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: #262626;
+    border-radius: 1rem;
+}
+
+.card-img-wrapper img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.card:hover .card-img-wrapper img {
+    opacity: 0.2;
+}
+
+.card-text {
+    position: absolute;
+    bottom: -2rem;
+    opacity: 0;
+    padding: 2rem;
+    text-shadow: 0.3rem 0.2rem 0.3rem rgba(0, 0, 0, 0.6);
+    transition: all 0.3s;
+}
+
+.card:hover .card-text {
+    opacity: 1;
+    bottom: 0;
+}
+
+#secao-projetos h3 {
+    font-family: 'Roboto Mono';
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 3.3rem;
+    color: #f1f1f1;
+}
+
+#secao-projetos p {
+    font-size: 1.5rem;
+}
+
+#Secaodeorcamentos {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: rgb(117, 0, 0);
+    background: url('https://animes.olanerd.com/wp-content/uploads/2022/08/1660489804_E-bom-ter-uma-moeda-universal-como-a-baga.jpg');
+    /*colocar alguma imagem referente ao projeto*/
+    background-size: cover;
+    /*item para nao clonar a imagem e cobrir a tela inteira*/
+    margin-bottom: 5px;
+}
+
+#Secaodeorcamentos form {
+    display: grid;
+    grid-gap: 10px;
+    color: #f1f1f1;
+    grid-template-columns: 2fr auto;
+    background-color: rgba(61, 61, 61, 0.9);
+    backdrop-filter: blur(6px);
+    border: 10px;
+    border-radius: 5px;
+    margin-top: 10%;
+    padding: 5rem;
+    font-family: 'Roboto Mono';
+    font-size: 20px;
+}
+
+#Secaodeorcamentos form h3 {
+    background-color: #9e0303;
+    color: var(--text-primary);
+    position: absolute;
+    top: -5%;
+    left: 18%;
+    padding: 2rem 8rem;
+    border-radius: 5px;
+    /*arredondar bordas*/
+    font-size: 25px;
+}
+
+#Secaodeorcamentos form output {
+    grid-column: 2;
 
 @keyframes fadeIn {
      from { opacity: 0;}
