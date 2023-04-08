@@ -1,31 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
 
-    to {
-        opacity: 1;
-    }
-}
+@media (width <=1326px) {
 
-@media (max-width: 890px) {
-
-    #secao-projetos ul{
+    #secao-projetos ul {
         flex-direction: column;
     }
 
-    #Secaodeorcamentos form {
-        display: flex;
-        flex-direction: column;
+    #secao-projetos {
+        padding-top: 50vh;
+        padding-bottom: 50vh;
     }
 
     #secao-chamada {
         display: flex;
         flex-direction: column;
-        background-image: none;
     }
 
     .cabecalho__paginaInicial {
@@ -36,16 +26,19 @@
 
 }
 
-@media (width: 769px) {
+@media (width <=880px) {
 
-    .largo {
-        display: none;
-    }
-    
-    #secao-chamada {
+    #Secaodeorcamentos form {
         display: flex;
         flex-direction: column;
-        background-image: none;
+    }
+
+    #Secaodeorcamentos form h3 {
+        top: -30px;
+    }
+
+    .segunda__chamada {
+        font-size: 1rem;
     }
 
 }
@@ -59,12 +52,22 @@ body {
     background-color: black;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 /*aula 05/04*/
 .loader {
     display: flex;
     align-items: center;
     height: 100vh;
-
+    margin-top: 50vh;
 }
 
 .spin {
@@ -107,6 +110,7 @@ header h1 {
 #hamburguer .linha {
     height: .5rem;
     width: 100%;
+    border-radius: 20px;
     background-color: #fff;
     box-shadow: 0 .2rem .2rem #000;
 }
@@ -116,23 +120,28 @@ header h1 {
 }
 
 nav {
-    align-items: center;
-    justify-content: center;
     position: fixed;
     display: flex;
-    background-color: #fff;
-    height: 50vh;
+    align-items: flex-end;
+    margin-top: 8vh;
+    margin-right: 2vw;
     width: 15rem;
     z-index: 1;
     right: -20rem;
     transition: right 0.5s;
+    text-align: end;
 }
 
 /* Para tirar o sublinhado o a e tirar a bolinha na lista */
 nav a {
+    background-color: rgba(255, 255, 255, 0.3);
     text-decoration: none;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: var(--text-secundary);
+}
+
+nav i {
+    margin: 6px;
 }
 
 
@@ -141,7 +150,7 @@ nav li {
 }
 
 nav a:hover {
-    color: #ff0000;
+    color: rgb(181, 0, 0);
 }
 
 .cabecalho__paginaInicial {
@@ -153,19 +162,18 @@ nav a:hover {
     background-repeat: no-repeat;
     padding-bottom: 40vh;
     margin-bottom: 5px;
+    height: 75vh;
+    width: 100vw;
 }
 
 .titulo__site {
     /* CULTURA GEEK */
-    width: 677px;
-    height: 12vh;
     margin-top: 10%;
     margin-left: 5%;
     font-family: 'Passion One';
     font-style: normal;
     font-weight: 400;
-    font-size: 14vh;
-    line-height: 20vh;
+    font-size: 600%;
     display: flex;
     align-items: center;
     animation: fadeIn 2s;
@@ -189,15 +197,12 @@ h4 {
 
 .chamada {
     /* “Aqui a resposta nem sempre é 42” */
-    width: 100vh;
-    height: 47px;
     margin-top: 1%;
     margin-left: 5%;
     font-family: 'Roboto Mono';
     font-style: normal;
     font-weight: 400;
-    font-size: 100%;
-    line-height: 47px;
+    font-size: 200%;
     display: flex;
     align-items: center;
     text-align: center;
@@ -220,8 +225,7 @@ h4 {
 
     font-family: 'Passion One';
     font-weight: 400;
-    font-size: 36px;
-    line-height: 40px;
+    font-size: 200%;
     text-align: center;
 
     color: #FFFFFF;
@@ -244,26 +248,27 @@ h4 {
 #secao-chamada {
     display: flex;
     align-items: center;
-    padding: 45vh;
+    justify-content: space-around;
     margin-bottom: 2px;
     background-image: url('./assets/images/cyberpunk.jpg');
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     transition: opacity 1s;
+    height: 80vh;
 }
 
 
 
 .segunda__chamada {
     opacity: 0;
-    font-size: 80px;
+    font-size: 10vh;
     color: #FFFFFF;
     font-family: 'Passion One';
     font-weight: 400;
     text-align: center;
     text-shadow: 5px 5px 5px #262626;
-    align-self: center;
     transition: opacity 1s;
+    align-self: center;
 }
 
 #secao-chamada:hover .segunda__chamada {
@@ -297,13 +302,13 @@ div {
     align-items: center;
     background: url('https://blog.br.playstation.com/tachyon/sites/4/2022/06/c50ed40ccbee94460e55dee40a077efc09474a20.jpg');
     background-size: cover;
-    padding: 35vh;
+    height: 80vh;
     margin-bottom: 5px;
 }
 
 #secao-projetos ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 2rem;
     color: #FFFFFF;
 }
@@ -313,8 +318,8 @@ div {
 }
 
 .card {
-    width: 25rem;
-    height: 30rem;
+    width: 30vh;
+    height: 40vh;
     position: relative;
     cursor: pointer;
 }
@@ -343,7 +348,7 @@ div {
     position: absolute;
     bottom: -2rem;
     opacity: 0;
-    padding: 2rem;
+    padding: 0 0 2rem 1rem;
     text-shadow: 0.3rem 0.2rem 0.3rem rgba(0, 0, 0, 0.6);
     transition: all 0.3s;
 }
@@ -356,17 +361,47 @@ div {
 #secao-projetos h3 {
     font-family: 'Roboto Mono';
     font-weight: 700;
-    font-size: 2rem;
-    line-height: 3.3rem;
+    font-size: 3vh;
     color: #f1f1f1;
 }
 
 #secao-projetos p {
-    font-size: 1.5rem;
+    font-size: 1.8vh;
+    margin: 5px 0 5px 0;
+}
+
+.btn__card {
+
+    border-radius: 6px;
+
+    background: linear-gradient(90deg, #AA0000 0%, #E44D2E 100%);
+    border-radius: 4px;
+
+    font-family: 'Passion One';
+
+
+    color: #FFFFFF;
+
+    opacity: 0;
+
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 3vh;
+    transition: all 1s;
+
+    width: 10rem;
+    height: 2rem;
+
+}
+
+.btn__card:hover {
+    opacity: 1;
+    transition: all 1s;
 }
 
 #Secaodeorcamentos {
-    height: 100vh;
+    height: 80vh;
     justify-content: center;
     align-items: center;
     background: rgb(117, 0, 0);
@@ -379,15 +414,16 @@ div {
 
 #Secaodeorcamentos form {
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 15px;
     color: #f1f1f1;
-    grid-template-columns: 2fr auto;
     background-color: rgba(61, 61, 61, 0.9);
     backdrop-filter: blur(6px);
     border: 10px;
     border-radius: 5px;
     margin-top: 10%;
-    padding: 5rem;
+    width: 50vh;
+    height: 17rem;
+    padding: 20px;
     font-family: 'Roboto Mono';
     font-size: 20px;
 }
@@ -396,15 +432,14 @@ div {
     background-color: #9e0303;
     color: var(--text-primary);
     position: absolute;
-    top: -5%;
-    left: 18%;
-    padding: 2rem 8rem;
+    top: -12%;
+    left: 10%;
+    height: 3vh;
+    padding: 10px;
     border-radius: 5px;
-    /*arredondar bordas*/
     font-size: 25px;
 }
 
 #Secaodeorcamentos form output {
     grid-column: 2;
-
 }
