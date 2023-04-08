@@ -24,7 +24,7 @@ function attOrcamento() {
     let prazo = document.querySelector("#prazo").value
     if (prazo > 2) preco += (preco * 1.15)
     else if (prazo > 4) preco += (preco * 1.3)
-    else if (prazo > 6) preco += (preco * 2)
+    else if (prazo > 8) preco += (preco * 1.8)
 
     let labelPrazo = document.querySelector("label[for=prazo]")
     labelPrazo.innerHTML = `${prazo} semana(s) de exibição`
